@@ -1,0 +1,13 @@
+1 house heavy 20 glass
+2 house medium 90 bio
+3 house medium 82 bio
+4 house light 23 paper
+5 house light 11 paper
+6 house heavy 29 glass
+7 factory heavy 35 plastic
+8 factory heavy 39 plastic
+9 house medium 85 bio
+10 house light 66 paper
+11 house light 43 plastic
+12 factory heavy 60 plastic
+

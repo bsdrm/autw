@@ -1,0 +1,51 @@
+glass
+    use packages(glass, $smell, $where, $weight)
+    when
+        packages.package('glass')
+        check $smell <= 30
+	check $where == 'house'
+	check $weight == 'heavy'
+
+
+bio
+    use packages(bio, $smell, $where, $weight)
+    when
+        packages.package('bio')
+        check $smell >= 80
+	check $where == 'house'
+	check $weight == 'medium'
+
+paper
+    use packages(paper, $smell, $where, $weight)
+    when
+        packages.package('paper')
+        check $smell < 30
+	check $where == 'house'
+	check $weight == 'light'
+
+plastic_parts
+    use packages(plastic, $smell, $where, $weight)
+    when
+        packages.package('heavy plastic parts')
+        check $smell >= 30
+	check $smell <= 60
+	check $where == 'factory'
+	check $weight == 'heavy'
+
+plastic_bottles
+    use packages(plastic, $smell, $where, $weight)
+    when
+        packages.package('plastic bottles')
+        check $smell >= 30
+	check $smell <= 60
+	check $where == 'house'
+	check $weight == 'light'
+
+paper_packaging
+    use packages(paper, $smell, $where, $weight)
+    when
+        packages.package('paper food packaging')
+        check $smell < 80
+	check $smell > 60
+	check $where == 'house'
+	check $weight == 'light'
